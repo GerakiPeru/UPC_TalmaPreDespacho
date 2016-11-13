@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Content.master.cs" Inherits="UITalmaNET.Content" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="_head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Modulo Pre-Despachos</title>
+    <link href="../Recursos/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../Recursos/css/logo-nav.css" rel="stylesheet">
+    <link href="../Recursos/css/styles.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+    <form id="_form" runat="server">
+    <telerik:RadStyleSheetManager id="StyleSheet" runat="server" />
+    <telerik:RadScriptManager ID="manager" runat="server" AsyncPostBackTimeout="3000" EnableScriptGlobalization="True" EnablePageMethods="true">
+        <Scripts>
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+            <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+            <asp:ScriptReference Path="~/Recursos/Scripts/jpopup.js" />
+        </Scripts>
+    </telerik:RadScriptManager>
+
+    <div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../Recursos/images/img-logo.png" alt="" width="140px" height="37px">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../PreDespachos/Tracking.aspx">Pre-Despachos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Logo Nav by Start Bootstrap</h1>
+                <p>Note: You may need to adjust some CSS based on the size of your logo. The default logo size is 150x50 pixels.</p>
+            </div>
+        </div>
+    </div>-->
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="../Recursos/Scripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Recursos/Scripts/bootstrap.min.js"></script>
+        <asp:ContentPlaceHolder ID="holder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

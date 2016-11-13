@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bd2f8f5b-ccc6-43c5-85dd-cdfd3a159d0d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="srvPreDespacho.xsd" MetadataType="Schema" ID="fc712137-62ab-4847-87b3-83e39b9dc789" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd1" />
+    <MetadataFile FileName="srvPreDespacho.wsdl" MetadataType="Wsdl" ID="9e89d4c0-d33e-4b22-b73f-f618210158f4" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?wsdl" />
+    <MetadataFile FileName="srvPreDespacho1.xsd" MetadataType="Schema" ID="19e947ad-a196-421b-930d-d691c8eb84bc" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd3" />
+    <MetadataFile FileName="srvPreDespacho2.xsd" MetadataType="Schema" ID="fed28764-a41f-4f1d-a6ec-dc97c97423af" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd0" />
+    <MetadataFile FileName="srvPreDespacho.disco" MetadataType="Disco" ID="c00fa258-a396-47ed-8433-548d8495bb6a" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?disco" />
+    <MetadataFile FileName="srvPreDespacho3.xsd" MetadataType="Schema" ID="79e34199-ce38-45fe-beee-402f69a6397c" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

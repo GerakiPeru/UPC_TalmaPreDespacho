@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/EsquemaEntidades.PreDespacho" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EsquemaEntidades.PreDespacho" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:55902/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfbePreDespacho">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bePreDespacho" nillable="true" type="tns:bePreDespacho" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbePreDespacho" nillable="true" type="tns:ArrayOfbePreDespacho" />
+  <xs:complexType name="bePreDespacho">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CO_AGENTE_ADUA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_CONSIGNATARIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_SEMAFORO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_USUA_CREA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_USUA_MODI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FE_FIN_DOCU_ADUA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_FIN_LEVANTE" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_FIN_PREFACTURA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_FIN_PRE_DESPACHO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_INI_DOCU_ADUA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_INI_LEVANTE" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_INI_PREFACTURA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_INI_PRE_DESPACHO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_GUIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IM_DEBE" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_DEBE_DOL" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_DEPO" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_DEPO_DOL" type="xs:double" />
+      <xs:element minOccurs="0" name="KG_ADUA" type="xs:double" />
+      <xs:element minOccurs="0" name="KG_RECI" type="xs:double" />
+      <xs:element minOccurs="0" name="NO_ENTI_CONC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_BULT_ADUA" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_BULT_RECI" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_CIF" type="xs:double" />
+      <xs:element minOccurs="0" name="NU_DUA_LEVANTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OB_DOCU_ADUA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OB_LEVANTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OB_PREFACTURA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_DOCU_ADUA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_LEVANTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_PREFACTURA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_PRE_DESPACHO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_SUNAT_LEVANTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TI_AGENTE_ADUA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TI_CONSIGNATARIO" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="bePreDespacho" nillable="true" type="tns:bePreDespacho" />
+  <xs:complexType name="ArrayOfbePreFactura">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bePreFactura" nillable="true" type="tns:bePreFactura" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbePreFactura" nillable="true" type="tns:ArrayOfbePreFactura" />
+  <xs:complexType name="bePreFactura">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CO_CLIE_FACT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_USUA_CREA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DE_DIRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FE_EMISION" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_GUIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IM_DCTO" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_IGVS" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_TOTAL" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_TOTAL_DOL" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_VENT" type="xs:double" />
+      <xs:element minOccurs="0" name="NO_CLIE_FACT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_DIAS" type="xs:int" />
+      <xs:element minOccurs="0" name="OB_DETALLE" nillable="true" type="tns:ArrayOfbePreFactura_Detalle" />
+      <xs:element minOccurs="0" name="PC_DCTO" type="xs:double" />
+      <xs:element minOccurs="0" name="PC_IGVS" type="xs:double" />
+      <xs:element minOccurs="0" name="TI_CAMB" type="xs:double" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="bePreFactura" nillable="true" type="tns:bePreFactura" />
+  <xs:complexType name="ArrayOfbePreFactura_Detalle">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bePreFactura_Detalle" nillable="true" type="tns:bePreFactura_Detalle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbePreFactura_Detalle" nillable="true" type="tns:ArrayOfbePreFactura_Detalle" />
+  <xs:complexType name="bePreFactura_Detalle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CO_CPTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_USUA_CREA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DE_CPTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FE_USUA_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_GUIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IM_DCTO" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_IGVS" type="xs:double" />
+      <xs:element minOccurs="0" name="IM_VENT" type="xs:double" />
+      <xs:element minOccurs="0" name="PC_DCTO" type="xs:double" />
+      <xs:element minOccurs="0" name="PC_IGVS" type="xs:double" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="bePreFactura_Detalle" nillable="true" type="tns:bePreFactura_Detalle" />
+  <xs:complexType name="ArrayOfbeGuia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="beGuia" nillable="true" type="tns:beGuia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbeGuia" nillable="true" type="tns:ArrayOfbeGuia" />
+  <xs:complexType name="beGuia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CO_CIUD_DES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_CIUD_ORI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_ENTI_LINE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DE_CONTENIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FE_LLEG_VUEL" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_PRIMER_BULTO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_GUIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KG_RECI" type="xs:double" />
+      <xs:element minOccurs="0" name="NO_ENTI_AGRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_ENTI_CONC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_ENTI_LINE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_BULT_RECI" type="xs:int" />
+      <xs:element minOccurs="0" name="NU_GUIA_HIJA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_GUIA_MADR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_MANI_HER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NU_VUEL" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="beGuia" nillable="true" type="tns:beGuia" />
+  <xs:complexType name="ArrayOfbeTransaccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="beTransaccion" nillable="true" type="tns:beTransaccion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbeTransaccion" nillable="true" type="tns:ArrayOfbeTransaccion" />
+  <xs:complexType name="beTransaccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BT_ARCH" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="CO_USUA_CREA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_USUA_MODI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EX_ARCH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FE_ARCH_UPLOAD" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_ARCH" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_GUIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IM_ARCH" type="xs:double" />
+      <xs:element minOccurs="0" name="OB_ARCH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RT_ARCH_FILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RT_ARCH_WEB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_ARCH" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="beTransaccion" nillable="true" type="tns:beTransaccion" />
+  <xs:complexType name="ArrayOfbePreDespacho_Documento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bePreDespacho_Documento" nillable="true" type="tns:bePreDespacho_Documento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfbePreDespacho_Documento" nillable="true" type="tns:ArrayOfbePreDespacho_Documento" />
+  <xs:complexType name="bePreDespacho_Documento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BT_ARCH" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="CO_USUA_CREA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CO_USUA_MODI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EX_ARCH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FE_ARCH_UPLOAD" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_CREA" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FE_USUA_MODI" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_ARCH" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_GUIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OB_ARCH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RT_ARCH_FILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RT_ARCH_WEB" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ST_ARCH" nillable="true" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute ref="ser:Id" />
+    <xs:attribute ref="ser:Ref" />
+  </xs:complexType>
+  <xs:element name="bePreDespacho_Documento" nillable="true" type="tns:bePreDespacho_Documento" />
+</xs:schema>

@@ -1,0 +1,79 @@
+.modal-footer {   border-top: 0px; }
+
+.tabletitle
+{
+	background-color:transparent;
+	padding:0 0 0 0;
+	border-collapse: collapse; 
+	border: none;
+	width:100%;
+	text-align:left;
+}
+
+.tdLargo
+{
+	/*
+    font-size:12px;
+	font-family:Tahoma;
+    font-weight:normal;
+    background-color: #E5ECF2;
+    border: 1px  solid #5A7892; 
+    border-right-width: 0px;
+    color: #00557D;
+    */    
+
+    text-align: left;
+    background-color: #E5ECF2;
+	padding: 4px 4px ;
+
+    text-decoration: none; 
+    width:200px;
+    	
+}
+
+.tdLabelLargo
+{
+	/*
+    font-size:12px;
+	font-family:Tahoma;
+    font-weight:normal;
+    */
+    color: #00557D;
+    background-color: #E5ECF2;
+    text-align: left;
+	padding: 4px 4px;
+    border: 1px  solid #5A7892; 
+    border-right-width: 0px;
+    text-decoration: none; 
+    width:200px;
+    	
+}
+
+.tdTextoUDLR
+{
+	/*font-size:12px;
+	font-family:Tahoma;
+    border: 1px solid #5A7892; 
+    */
+	color:#00557D;
+	background-color: White;
+	text-align:left;
+	padding: 5px 5px;
+    
+    text-decoration: none; 
+}
+
+.tdUDLR
+{
+	/*
+    font-size:12px;
+	font-family:Tahoma;
+	color:#00557D;
+	background-color: White;
+    border: 1px solid #5A7892; 
+    */
+
+	text-align:left;
+	padding: 4px 4px;
+    text-decoration: none; 
+}

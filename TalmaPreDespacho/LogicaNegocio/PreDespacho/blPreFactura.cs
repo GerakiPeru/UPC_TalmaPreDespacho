@@ -10,20 +10,20 @@ namespace LogicaNegocio.PreDespacho
 {
     public class blPreFactura
     {
-        public List<bePreFactura> GetPreFactura(string ID_GUIA, out beLogger logger)
+        public List<bePreFactura> GetPreFactura(string ID_GUIA, out beLog logger)
         {
             List<bePreFactura> ocol = new List<bePreFactura>();
-            logger = new beLogger();
+            logger = new beLog();
             try
             {
                 daPreFactura da = new daPreFactura();
                 ocol = da.GetPreFactura(ID_GUIA);
                 logger.Registros = ocol.Count;
-                logger.Estado = EstadoLogger.OK;
+                logger.Estado = "OK";
             }
             catch (Exception ex)
             {
-                logger.Estado = EstadoLogger.ERROR;
+                logger.Estado = "ERROR";
                 if (ex.Message.Split('|').Length > 1)
                     logger.Mensaje = ex.Message.Split('|')[1];
                 else

@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
-      <Project>{0DE91823-8D9F-4700-A15C-62A8C8821A91}</Project>
+      <Project>{0de91823-8d9f-4700-a15c-62a8c8821a91}</Project>
       <Name>AccesoDatos</Name>
     </ProjectReference>
     <ProjectReference Include="..\EsquemaEntidades\EsquemaEntidades.csproj">

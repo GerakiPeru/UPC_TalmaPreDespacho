@@ -43,12 +43,16 @@
   <ItemGroup>
     <Compile Include="Log\beLog.cs" />
     <Compile Include="Perfiles\beUsuario.cs" />
+    <Compile Include="Perfiles\IUsuarioResult.cs" />
     <Compile Include="PreDespacho\beGuia.cs" />
     <Compile Include="PreDespacho\bePreDespacho.cs" />
     <Compile Include="PreDespacho\bePreFactura_Detalle.cs" />
     <Compile Include="PreDespacho\bePreFactura.cs" />
     <Compile Include="PreDespacho\beTransaccion.cs" />
     <Compile Include="PreDespacho\bePreDespacho_Documento.cs" />
+    <Compile Include="PreDespacho\IGuiaResult.cs" />
+    <Compile Include="PreDespacho\IPreDespachosResult.cs" />
+    <Compile Include="PreDespacho\IPreFacturaResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

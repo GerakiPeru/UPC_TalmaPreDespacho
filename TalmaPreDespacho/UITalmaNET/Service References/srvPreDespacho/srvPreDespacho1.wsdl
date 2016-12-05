@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="srvPreDespacho" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EsquemaEntidades.PreDespacho" />
+      <xsd:import schemaLocation="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvPreDespacho.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/EsquemaEntidades.Log" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IsrvPreDespacho_GetPreDespachos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreDespachos" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetPreDespachos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreDespachosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_SetGeneraPreDespacho_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetGeneraPreDespacho" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_SetGeneraPreDespacho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetGeneraPreDespachoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetPreFactura_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreFactura" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetPreFactura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_SetGeneraPreFactura_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetGeneraPreFactura" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_SetGeneraPreFactura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetGeneraPreFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetGetGuia_Resumen_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetGuia_Resumen" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetGetGuia_Resumen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGetGuia_ResumenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetTransacciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransacciones" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetTransacciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransaccionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_UpSert_Transaccion_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpSert_Transaccion" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_UpSert_Transaccion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpSert_TransaccionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetPreDespacho_Documentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreDespacho_Documentos" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_GetPreDespacho_Documentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreDespacho_DocumentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_UpSert_PreDespacho_Documento_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpSert_PreDespacho_Documento" />
+  </wsdl:message>
+  <wsdl:message name="IsrvPreDespacho_UpSert_PreDespacho_Documento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpSert_PreDespacho_DocumentoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IsrvPreDespacho">
+    <wsdl:operation name="GetPreDespachos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetPreDespachos" message="tns:IsrvPreDespacho_GetPreDespachos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetPreDespachosResponse" message="tns:IsrvPreDespacho_GetPreDespachos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGeneraPreDespacho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/SetGeneraPreDespacho" message="tns:IsrvPreDespacho_SetGeneraPreDespacho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/SetGeneraPreDespachoResponse" message="tns:IsrvPreDespacho_SetGeneraPreDespacho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreFactura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetPreFactura" message="tns:IsrvPreDespacho_GetPreFactura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetPreFacturaResponse" message="tns:IsrvPreDespacho_GetPreFactura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGeneraPreFactura">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/SetGeneraPreFactura" message="tns:IsrvPreDespacho_SetGeneraPreFactura_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/SetGeneraPreFacturaResponse" message="tns:IsrvPreDespacho_SetGeneraPreFactura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGetGuia_Resumen">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetGetGuia_Resumen" message="tns:IsrvPreDespacho_GetGetGuia_Resumen_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetGetGuia_ResumenResponse" message="tns:IsrvPreDespacho_GetGetGuia_Resumen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransacciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetTransacciones" message="tns:IsrvPreDespacho_GetTransacciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetTransaccionesResponse" message="tns:IsrvPreDespacho_GetTransacciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpSert_Transaccion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/UpSert_Transaccion" message="tns:IsrvPreDespacho_UpSert_Transaccion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/UpSert_TransaccionResponse" message="tns:IsrvPreDespacho_UpSert_Transaccion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreDespacho_Documentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetPreDespacho_Documentos" message="tns:IsrvPreDespacho_GetPreDespacho_Documentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/GetPreDespacho_DocumentosResponse" message="tns:IsrvPreDespacho_GetPreDespacho_Documentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpSert_PreDespacho_Documento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvPreDespacho/UpSert_PreDespacho_Documento" message="tns:IsrvPreDespacho_UpSert_PreDespacho_Documento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvPreDespacho/UpSert_PreDespacho_DocumentoResponse" message="tns:IsrvPreDespacho_UpSert_PreDespacho_Documento_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IsrvPreDespacho" type="tns:IsrvPreDespacho">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPreDespachos">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/GetPreDespachos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGeneraPreDespacho">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/SetGeneraPreDespacho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreFactura">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/GetPreFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGeneraPreFactura">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/SetGeneraPreFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGetGuia_Resumen">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/GetGetGuia_Resumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransacciones">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/GetTransacciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpSert_Transaccion">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/UpSert_Transaccion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreDespacho_Documentos">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/GetPreDespacho_Documentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpSert_PreDespacho_Documento">
+      <soap:operation soapAction="http://tempuri.org/IsrvPreDespacho/UpSert_PreDespacho_Documento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="srvPreDespacho">
+    <wsdl:port name="BasicHttpBinding_IsrvPreDespacho" binding="tns:BasicHttpBinding_IsrvPreDespacho">
+      <soap:address location="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvPreDespacho.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

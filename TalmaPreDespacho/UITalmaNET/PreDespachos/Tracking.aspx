@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Content.Master" AutoEventWireup="true" CodeBehind="Tracking.aspx.cs" Inherits="UITalmaNET.PreDespachos.Tracking" %>
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
 
@@ -74,7 +75,7 @@
                 </table>
             </div>
         </div>
-        <telerik:RadGrid ID="grid" runat="server" OnNeedDataSource="grid_NeedDataSource" Width="99%" onitemdatabound="grid_ItemDataBound">
+        <telerik:RadGrid ID="grid" runat="server" SkinID="Bootstrap" OnNeedDataSource="grid_NeedDataSource" Width="99%" onitemdatabound="grid_ItemDataBound">
             <MasterTableView AutoGenerateColumns="false" TableLayout="Fixed">
                 <Columns>
                     <telerik:GridBoundColumn HeaderText="Id Guia" DataField="ID_GUIA" UniqueName="ID_GUIA">

@@ -11,20 +11,20 @@ namespace LogicaNegocio.PreDespacho
 {
     public class blPreDespacho
     {
-        public List<bePreDespacho> GetPreDespachos(string ID_GUIA, string CO_USUA, string ST_PRE_DESPACHO, out beLogger logger)
+        public List<bePreDespacho> GetPreDespachos(string ID_GUIA, string CO_USUA, string ST_PRE_DESPACHO, out beLog logger)
         {
             List<bePreDespacho> ocol = new List<bePreDespacho>();
-            logger = new beLogger();
+            logger = new beLog();
             try 
             {
                 daPreDespacho da = new daPreDespacho();
                 ocol = da.GetPreDespachos(ID_GUIA, CO_USUA, ST_PRE_DESPACHO);
                 logger.Registros = ocol.Count;
-                logger.Estado = EstadoLogger.OK;
+                logger.Estado = "OK";
             }
             catch (Exception ex) 
             {
-                logger.Estado = EstadoLogger.ERROR;
+                logger.Estado = "ERROR";
                 if (ex.Message.Split('|').Length > 1)
                     logger.Mensaje = ex.Message.Split('|')[1];
                 else
@@ -33,6 +33,7 @@ namespace LogicaNegocio.PreDespacho
             }
             return ocol;
         }
+
 
         public bool SetGeneraPreDespacho(string ID_GUIA, string CO_USUA, DateTime? FE_RETI, out beLogger logger)
         {

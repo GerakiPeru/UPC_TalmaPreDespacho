@@ -6,18 +6,11 @@ using System.Runtime.Serialization;
 
 namespace EsquemaEntidades.Log
 {
-    [Serializable]
-    [DataContract(IsReference = true)]
     public class beLogger
     {
-        [DataMember]
         private string mensaje;
-        [DataMember]
         public EstadoLogger Estado { get; set; }
-        [DataMember]
         public int Registros { get; set; }
-
-        [DataMember]
         public string Mensaje 
         {
             get
@@ -34,11 +27,37 @@ namespace EsquemaEntidades.Log
         }
     }
 
-    [DataContract(Name = "EstadoLogger")]
+    public class beLog
+    {
+        private string mensaje;
+        public string Estado { get; set; }
+        public int Registros { get; set; }
+        public string Mensaje
+        {
+            get
+            {
+                return this.mensaje;
+            }
+            set
+            {
+                if (value.Split('|').Length > 1)
+                    this.mensaje = value.Split('|')[1];
+                else
+                    this.mensaje = value;
+            }
+        }
+
+        public beLog() { }
+        public beLog(string estado, string mensaje, int registros) 
+        {
+            this.Mensaje = mensaje;
+            this.Estado = estado;
+            this.Registros = registros;
+        }
+    }
+
     public enum EstadoLogger {
-        [EnumMember]
         OK,
-        [EnumMember]
         ERROR 
     };
 }

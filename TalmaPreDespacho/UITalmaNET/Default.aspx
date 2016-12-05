@@ -8,8 +8,8 @@
     <meta charset="utf-8">
     <meta name="generator" content="Bootply" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="Recursos/css/bootstrap.min.css" rel="stylesheet">
-    <link href="Recursos/css/styles.css" rel="stylesheet">
+    <link href="/sites/talma/Recursos/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/sites/talma/Recursos/css/styles.css" rel="stylesheet">
     <title>Acceso al Sistema</title>
 </head>
 <body>

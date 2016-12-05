@@ -1535,13 +1535,13 @@ namespace UITalmaNET.srvPreDespacho {
         private string EX_ARCHField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime FE_ARCH_UPLOADField;
+        private System.Nullable<System.DateTime> FE_ARCH_UPLOADField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime FE_USUA_CREAField;
+        private System.Nullable<System.DateTime> FE_USUA_CREAField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime FE_USUA_MODIField;
+        private System.Nullable<System.DateTime> FE_USUA_MODIField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int ID_ARCHField;
@@ -1627,7 +1627,7 @@ namespace UITalmaNET.srvPreDespacho {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime FE_ARCH_UPLOAD {
+        public System.Nullable<System.DateTime> FE_ARCH_UPLOAD {
             get {
                 return this.FE_ARCH_UPLOADField;
             }
@@ -1640,7 +1640,7 @@ namespace UITalmaNET.srvPreDespacho {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime FE_USUA_CREA {
+        public System.Nullable<System.DateTime> FE_USUA_CREA {
             get {
                 return this.FE_USUA_CREAField;
             }
@@ -1653,7 +1653,7 @@ namespace UITalmaNET.srvPreDespacho {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime FE_USUA_MODI {
+        public System.Nullable<System.DateTime> FE_USUA_MODI {
             get {
                 return this.FE_USUA_MODIField;
             }
@@ -1788,13 +1788,13 @@ namespace UITalmaNET.srvPreDespacho {
         private string EX_ARCHField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime FE_ARCH_UPLOADField;
+        private System.Nullable<System.DateTime> FE_ARCH_UPLOADField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime FE_USUA_CREAField;
+        private System.Nullable<System.DateTime> FE_USUA_CREAField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime FE_USUA_MODIField;
+        private System.Nullable<System.DateTime> FE_USUA_MODIField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int ID_ARCHField;
@@ -1877,7 +1877,7 @@ namespace UITalmaNET.srvPreDespacho {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime FE_ARCH_UPLOAD {
+        public System.Nullable<System.DateTime> FE_ARCH_UPLOAD {
             get {
                 return this.FE_ARCH_UPLOADField;
             }
@@ -1890,7 +1890,7 @@ namespace UITalmaNET.srvPreDespacho {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime FE_USUA_CREA {
+        public System.Nullable<System.DateTime> FE_USUA_CREA {
             get {
                 return this.FE_USUA_CREAField;
             }
@@ -1903,7 +1903,7 @@ namespace UITalmaNET.srvPreDespacho {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime FE_USUA_MODI {
+        public System.Nullable<System.DateTime> FE_USUA_MODI {
             get {
                 return this.FE_USUA_MODIField;
             }

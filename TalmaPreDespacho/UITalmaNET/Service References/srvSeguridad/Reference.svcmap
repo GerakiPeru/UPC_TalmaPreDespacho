@@ -20,14 +20,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:55902/PreDespacho/Contratos/srvSeguridad.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://www.talmanet.com.pe/services/srvADUTalma/PreDespacho/Contratos/srvSeguridad.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="srvSeguridad.xsd" MetadataType="Schema" ID="fa6a1aa5-819b-4486-8c1b-34b27083ca1d" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvSeguridad.svc?xsd=xsd1" />
-    <MetadataFile FileName="srvSeguridad1.xsd" MetadataType="Schema" ID="1583605e-6a2c-499f-b9e6-a92bb6e61143" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvSeguridad.svc?xsd=xsd0" />
-    <MetadataFile FileName="srvSeguridad.disco" MetadataType="Disco" ID="077cc7c8-d1b9-4a02-b253-6be8ec7f3aac" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvSeguridad.svc?disco" />
-    <MetadataFile FileName="srvSeguridad.wsdl" MetadataType="Wsdl" ID="d17df842-77a0-4aa9-ae41-71bfe3abea73" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvSeguridad.svc?wsdl" />
-    <MetadataFile FileName="srvSeguridad2.xsd" MetadataType="Schema" ID="6d44ec48-e90a-4eb3-b954-7f62e8da44b7" SourceId="1" SourceUrl="http://localhost:55902/PreDespacho/Contratos/srvSeguridad.svc?xsd=xsd2" />
+    <MetadataFile FileName="srvSeguridad4.xsd" MetadataType="Schema" ID="c122d6dc-91d7-49e5-8cee-5a3675f3e2a4" SourceId="1" SourceUrl="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvSeguridad.svc?xsd=xsd2" />
+    <MetadataFile FileName="srvSeguridad41.xsd" MetadataType="Schema" ID="7883c3af-4029-470d-a773-b042de6aaca8" SourceId="1" SourceUrl="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvSeguridad.svc?xsd=xsd0" />
+    <MetadataFile FileName="srvSeguridad1.disco" MetadataType="Disco" ID="5ebcc09a-fe65-43fa-bb25-e877d0954c83" SourceId="1" SourceUrl="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvSeguridad.svc?disco" />
+    <MetadataFile FileName="srvSeguridad42.xsd" MetadataType="Schema" ID="632e2c2e-e90d-45d3-8114-6b6929afff0a" SourceId="1" SourceUrl="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvSeguridad.svc?xsd=xsd1" />
+    <MetadataFile FileName="srvSeguridad1.wsdl" MetadataType="Wsdl" ID="212eec88-5132-4689-ade8-0e98b57c493d" SourceId="1" SourceUrl="http://tlmsrvrmp2.grupotalma.local/services/srvADUTalma/PreDespacho/Contratos/srvSeguridad.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

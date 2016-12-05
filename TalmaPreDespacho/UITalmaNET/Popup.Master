@@ -10,8 +10,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Modulo Pre-Despachos</title>
-    <link href="../Recursos/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Recursos/css/styles.css" rel="stylesheet">
+    <link href="/sites/talma/Recursos/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/sites/talma/Recursos/css/styles.css" rel="stylesheet">
     <%--<link href="../Recursos/css/logo-nav.css" rel="stylesheet">--%>
     <asp:ContentPlaceHolder ID="head" runat="server">        
     </asp:ContentPlaceHolder>    
@@ -19,12 +19,12 @@
 <body>
     <form id="_form" runat="server">
     <telerik:RadStyleSheetManager id="StyleSheet" runat="server" />
-    <telerik:RadScriptManager ID="manager" runat="server" AsyncPostBackTimeout="3000" EnableScriptGlobalization="True" EnablePageMethods="true">
+    <telerik:RadScriptManager ID="manager" runat="server" EnableCdn="true">
         <Scripts>
             <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
             <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
             <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
-            <asp:ScriptReference Path="~/Recursos/Scripts/jpopup.js" />
+            <asp:ScriptReference Path="/sites/talma/Recursos/Scripts/jpopup.js" />
         </Scripts>
     </telerik:RadScriptManager>
     <div>

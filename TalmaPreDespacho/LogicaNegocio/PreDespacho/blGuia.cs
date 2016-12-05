@@ -10,20 +10,20 @@ namespace LogicaNegocio.PreDespacho
 {
     public class blGuia
     {
-        public List<beGuia> GetGetGuia_Resumen(string ID_GUIA, out beLogger logger)
+        public List<beGuia> GetGetGuia_Resumen(string ID_GUIA, out beLog logger)
         {
             List<beGuia> ocol = new List<beGuia>();
-            logger = new beLogger();
+            logger = new beLog();
             try
             {
                 daGuia da = new daGuia();
                 ocol = da.GetGuia_Resumen(ID_GUIA);
                 logger.Registros = ocol.Count;
-                logger.Estado = EstadoLogger.OK;
+                logger.Estado = "OK";
             }
             catch (Exception ex)
             {
-                logger.Estado = EstadoLogger.ERROR;
+                logger.Estado = "ERROR";
                 if (ex.Message.Split('|').Length > 1)
                     logger.Mensaje = ex.Message.Split('|')[1];
                 else
